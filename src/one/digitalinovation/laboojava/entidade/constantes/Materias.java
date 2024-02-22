@@ -1,25 +1,21 @@
 package one.digitalinovation.laboojava.entidade.constantes;
 
-/**
- * Gêneros dos livros vendidos.
- * @author thiago leite
- */
-public enum Genero {
+public enum Materias {
 
-    DRAMA(15),
-    SUSPENSE(10),
-    ROMANCE(5);
+    M2(2),
+    M5(5),
+    M10(10);
     private double fator;
 
     /**
      * Construtor.
      * @param fator Valor por tipo que influencia no cálculo do frete.
      */
-    Genero(double fator) {
-        this.fator = fator / 100;
+    Materias(double fator) {
+        this.fator = fator/10;
     }
 
     public double getFator() {
-        return this.fator;
+        return fator;
     }
 }
